@@ -5,16 +5,17 @@ public class Radio {
     private int currentVolume;
 
     public void next() {
-        if (currentStation != 9 ) {
+        if (currentStation != 9) {
             currentStation++;
         } else {
             currentStation = 0;
         }
     }
+
     public void prev() {
-        if (currentStation !=0) {
+        if (currentStation != 0) {
             currentStation--;
-        }else {
+        } else {
             currentStation = 9;
         }
     }
@@ -23,10 +24,11 @@ public class Radio {
         if (currentVolume < 10) {
             currentVolume = currentVolume + 1;
         }
-        if (currentVolume ==10) {
+        if (currentVolume == 10) {
             currentVolume = 10;
         }
     }
+
     public void decreaseVolume() {
         if (currentVolume != 0) {
             currentVolume = currentVolume - 1;
@@ -35,6 +37,7 @@ public class Radio {
         }
 
     }
+
     public int getCurrentStation() {
         return currentStation;
     }
